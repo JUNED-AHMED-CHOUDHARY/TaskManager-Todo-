@@ -1,0 +1,9 @@
+/* write your css here */
+body, html {
+    overflow: hidden;
+}
+
+.word-wrap {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
