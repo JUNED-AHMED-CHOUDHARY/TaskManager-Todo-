@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin:process.env.FRONTEND_URL,
+    origin: process.env.FRONTEND_URL,
     methods: ["GET", "PUT", "DELETE", "POST"],
   })
 );
@@ -34,13 +34,16 @@ app.use(
 dbConnect();
 cloudinaryConnect();
 
-
 // routes here
 app.use("/api/v1", userRoute);
 app.use("/api/v1", taskRoute);
 
-
-
+app.get("/", (req, res, next) => {
+  return res.status(200).json({
+    success: true,
+    message: `successfull`,
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`app is listening at ${PORT}`);
