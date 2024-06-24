@@ -12,7 +12,7 @@
 //   const fetchAllTasks = async () => {
 //     try {
 //       const { data } = await axios.get(
-//         "http://localhost:4000/api/v1/getalltask/",
+//         "https://taskmanager-backend-p5r2.onrender.com/api/v1/getalltask/",
 //         { withCredentials: true }
 //       );
 
@@ -27,7 +27,7 @@
 
 //   const handleLogout = async () => {
 //     try {
-//       const { data } = await axios.get("http://localhost:4000/api/v1/logout", {
+//       const { data } = await axios.get("https://taskmanager-backend-p5r2.onrender.com/api/v1/logout", {
 //         withCredentials: true,
 //       });
 //       console.log("res = ", data);
@@ -156,7 +156,7 @@ const Navbar = ({ tasks, setTasks, setIsAuthenticated, isAuthenticated , setTask
 
   const fetchAllTasks = async () => {
     try {
-      const { data } = await axios.get("http://localhost:4000/api/v1/getalltask/", {
+      const { data } = await axios.get("https://taskmanager-backend-p5r2.onrender.com/api/v1/getalltask/", {
         withCredentials: true,
       });
       setAllTasks(data.allTasks);
@@ -169,7 +169,7 @@ const Navbar = ({ tasks, setTasks, setIsAuthenticated, isAuthenticated , setTask
 
   const handleLogout = async () => {
     try {
-      const { data } = await axios.get("http://localhost:4000/api/v1/logout", {
+      const { data } = await axios.get("https://taskmanager-backend-p5r2.onrender.com/api/v1/logout", {
         withCredentials: true,
       });
       toast.success(data.message);

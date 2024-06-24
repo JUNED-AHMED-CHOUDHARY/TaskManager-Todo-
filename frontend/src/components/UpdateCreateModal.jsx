@@ -16,7 +16,7 @@
 //   useEffect(() => {
 //     const fetchSingleTask = async () => {
 //       await axios
-//         .get(`http://localhost:4000/api/v1/getsingletask/${id}`, {
+//         .get(`https://taskmanager-backend-p5r2.onrender.com/api/v1/getsingletask/${id}`, {
 //           withCredentials: true,
 //         })
 //         .then((res) => {
@@ -35,7 +35,7 @@
 
 //   const updateTaskFun = async () => {
 //     await axios
-//       .put(`http://localhost:4000/api/v1/updatetask/${id}`,{title, description, status, archived}, {
+//       .put(`https://taskmanager-backend-p5r2.onrender.com/api/v1/updatetask/${id}`,{title, description, status, archived}, {
 //         withCredentials: true,
 //       })
 //       .then((res) => {
@@ -166,7 +166,7 @@ const UpdateCreateModal = ({ updateTask, setShowUpdateModal, setTasks }) => {
   useEffect(() => {
     const fetchSingleTask = async () => {
       await axios
-        .get(`http://localhost:4000/api/v1/getsingletask/${id}`, {
+        .get(`https://taskmanager-backend-p5r2.onrender.com/api/v1/getsingletask/${id}`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -186,7 +186,7 @@ const UpdateCreateModal = ({ updateTask, setShowUpdateModal, setTasks }) => {
   const updateTaskFun = async () => {
     await axios
       .put(
-        `http://localhost:4000/api/v1/updatetask/${id}`,
+        `https://taskmanager-backend-p5r2.onrender.com/api/v1/updatetask/${id}`,
         { title, description, status, archived },
         {
           withCredentials: true,

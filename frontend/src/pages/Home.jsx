@@ -17,7 +17,7 @@
 //   const deleteTask = async (id) => {
 //     console.log("id in frontend for deleting -> ", id);
 //     await axios
-//       .delete(`http://localhost:4000/api/v1/deletetask/${id}`, {
+//       .delete(`https://taskmanager-backend-p5r2.onrender.com/api/v1/deletetask/${id}`, {
 //         withCredentials: true,
 //       })
 //       .then((res) => {
@@ -121,7 +121,7 @@ const Home = ({ isAuthenticated, tasks, setTasks, taskType }) => {
   const deleteTask = async (id) => {
     console.log("id in frontend for deleting -> ", id);
     await axios
-      .delete(`http://localhost:4000/api/v1/deletetask/${id}`, {
+      .delete(`https://taskmanager-backend-p5r2.onrender.com/api/v1/deletetask/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

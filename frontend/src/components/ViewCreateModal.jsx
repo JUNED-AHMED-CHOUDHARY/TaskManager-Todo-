@@ -12,7 +12,7 @@ const ViewCreateModal = ({ showViewModal, setShowViewModal, viewTask }) => {
   useEffect(() => {
     const fetchSingleTask = async () => {
       await axios
-        .get(`http://localhost:4000/api/v1/getsingletask/${id}`, {
+        .get(`https://taskmanager-backend-p5r2.onrender.com/api/v1/getsingletask/${id}`, {
           withCredentials: true,
         })
         .then((res) => {

@@ -45,7 +45,7 @@
 //       });
 //       formDataToSubmit.append("image", image);
 
-//       const res = await axios.post("http://localhost:4000/api/v1/signup", formDataToSubmit, {
+//       const res = await axios.post("https://taskmanager-backend-p5r2.onrender.com/api/v1/signup", formDataToSubmit, {
 //         withCredentials: true,
 //         headers: {
 //           "Content-Type": "multipart/form-data",
@@ -193,7 +193,7 @@ const Signup = ({ isAuthenticated, setIsAuthenticated }) => {
 
       console.log("Submitting form data:", Array.from(formDataToSubmit.entries()));
 
-      const res = await axios.post("http://localhost:4000/api/v1/signup", formDataToSubmit, {
+      const res = await axios.post("https://taskmanager-backend-p5r2.onrender.com/api/v1/signup", formDataToSubmit, {
         withCredentials: true,
         headers: {
           "Content-Type": "multipart/form-data",
